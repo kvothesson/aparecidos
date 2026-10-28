@@ -1,62 +1,69 @@
-# kvothesson: el Pombero suelto
+# aparecidos
 
-Plugin para Claude Code. Lo invocás y aparece un Pombero caminando por el borde de
-abajo de tu pantalla, que cada tanto te dice algo. Como el clip de Word, pero del monte.
+Los aparecidos del folklore del Universo Austral se dejan ver en tu pantalla. Caminan,
+flotan, vuelan o reptan por el borde de abajo, y cada tanto te dicen algo. Como el
+clip de Word, pero del monte.
 
-```
-/kvothesson:kvothesson
-```
+Son los mismos bichos de [daemons](https://github.com/kvothesson/daemons-plugin),
+en versión visible.
 
 ## Instalación
 
 ```
 /plugin marketplace add https://raw.githubusercontent.com/kvothesson/ar-plugins/master/.claude-plugin/marketplace.json
-/plugin install kvothesson@ar-plugins
+/plugin install aparecidos@ar-plugins
 ```
 
-Necesita Python 3 con tkinter (viene con Python en Windows y macOS). No instala nada más.
+Necesita Python 3 con tkinter. Viene con Python en Windows y macOS, y no instala nada más.
 
-## Uso
+## Los aparecidos
 
-| Comando | Qué hace |
-|---|---|
-| `/kvothesson:kvothesson` | Lo suelta. Si ya anda suelto, le hace decir algo. |
-| `/kvothesson:kvothesson chau` | Lo manda de vuelta al monte. |
-| `/kvothesson:kvothesson <texto>` | Le hace decir ese texto. |
+| Comando | Quién | Cómo anda |
+|---|---|---|
+| `/aparecidos:pombero` | Pombero | Camina con su sombrero de paja y te pide miel. |
+| `/aparecidos:luzmala` | Luz Mala | Flota y titila. Donde se apaga hay un tesoro. |
+| `/aparecidos:lobizon` | Lobizón | Corre en cuatro patas. De noche anda más rápido. |
+| `/aparecidos:mainumby` | Mainumby | Picaflor que vuela a los saltos y trae recados. |
+| `/aparecidos:mboi` | Mbói | Serpiente que repta y se fija en tus patrones. |
+| `/aparecidos:ana` | Añá | Camina y de golpe aparece en otro lado. |
+| `/aparecidos:irupe` | Irupé | Flor del agua que deriva despacio y ordena. |
+| `/aparecidos:kaayaryi` | Ka'a Yarýi | Un mate con patas que cuida tu foco. |
+| `/aparecidos` | Todos | Los suelta a todos. Con `chau`, se vuelven todos. |
 
-Sobre el bicho:
+Cada comando acepta argumentos:
+
+- **Sin nada:** suelta al aparecido. Si ya andaba suelto, le hace decir algo.
+- **`chau`:** lo manda de vuelta al monte.
+- **Cualquier otro texto:** se lo hace decir. Por ejemplo: `/aparecidos:pombero guardá todo`.
+
+## Sobre los bichos
 
 - **Clic:** te contesta.
-- **Arrastrar y soltar:** se cae hasta el piso.
-- **Clic derecho:** abre un menú con "Decí algo", "Quedate quieto" y "Volvé al monte".
-- **Hora:** a la hora de la siesta y de madrugada tiene frases propias.
+- **Arrastrar y soltar:** los que caminan se caen al piso. Los que flotan o vuelan se quedan donde los dejaste.
+- **Clic derecho:** abre un menú con "Decí algo", "Quedate quieto", "Volvé al monte" y "Que vuelvan todos".
+- **Hora:** a la hora de la siesta y de madrugada tienen frases propias.
+- **De a uno:** si hay varios sueltos, esperan a que termine de hablar el que está hablando.
 
-También anda sin Claude: `python bicho/bicho.py`.
+Sin Claude también andan:
 
-## Sumar frases
+```
+python motor/aparecidos.py todos
+```
 
-Las frases están en [`bicho/frases.json`](bicho/frases.json), separadas por momento:
+## Sumar frases o bichos
 
-- `saludo`
-- `suelta`
-- `siesta`
-- `noche`
-- `toque`
-- `caida`
-- `chau`
-
-Agregá las tuyas en el grupo que corresponda.
+- **Frases:** están en `motor/frases/<bicho>.json`, agrupadas por momento: `saludo`, `suelta`, `siesta`, `noche`, `toque`, `caida` y `chau`.
+- **Sprites:** están en `motor/sprites.py`. Son pixel art escrito con letras, una paleta por bicho y cinco cuadros: quieto, paso, parpadeo, habla y habla con paso.
+- **Bicho nuevo:** necesita su entrada en `BICHOS`, su archivo de frases y su `skills/<bicho>/SKILL.md`.
 
 ## Cómo funciona
 
-Es una ventana de tkinter sin bordes, siempre arriba y con el fondo transparente:
+Cada aparecido es una ventana de tkinter sin bordes, siempre arriba y con el fondo transparente:
 
 - **Windows:** se usa `-transparentcolor`.
 - **macOS:** se usa `-transparent`.
 - **Linux:** queda con fondo oscuro.
 
-El sprite es pixel art de 20x24 dibujado con letras en el código.
-
-Para que haya un solo Pombero a la vez, la ventana escucha en `127.0.0.1:47404`. Las invocaciones que vienen después le mandan las órdenes por ahí.
+Todos viven en un mismo proceso, el corral, que escucha en `127.0.0.1:47404`. Cada comando le manda una orden. Si el corral no está abierto, lo abre. Cuando se va el último bicho, el corral se cierra solo.
 
 MIT · Kvothesson
