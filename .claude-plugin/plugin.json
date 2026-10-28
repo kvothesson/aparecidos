@@ -1,12 +1,9 @@
 {
-  "name": "kvothesson",
-  "description": "Un Pombero que recorre tu pantalla y te dice cosas, como el clip de Word pero del monte. Folklore del Universo Austral.",
-  "version": "0.1.0",
-  "author": {
-    "name": "Kvothesson"
-  },
-  "homepage": "https://github.com/kvothesson/kvothesson-bicho",
-  "repository": "https://github.com/kvothesson/kvothesson-bicho",
-  "license": "MIT",
-  "keywords": ["mascota", "pet", "folklore", "pombero", "argentina"]
+  "name": "aparecidos",
+  "version": "1.0.0",
+  "description": "Aparecidos del folklore que recorren tu pantalla y te dicen cosas, como el clip de Word pero del monte: Pombero, Luz Mala, Lobizón, Mainumby, Mbói, Añá, Irupé y Ka'a Yarýi.",
+  "author": { "name": "kvothesson" },
+  "homepage": "https://github.com/kvothesson/aparecidos",
+  "repository": { "url": "https://github.com/kvothesson/aparecidos" },
+  "license": "MIT"
 }

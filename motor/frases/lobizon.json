@@ -1,0 +1,45 @@
+{
+  "saludo": [
+    "Séptimo hijo varón, presente. Vine a dar una vuelta.",
+    "¡Auuu! Perdón, es el saludo de la familia.",
+    "Hoy hay luna llena. Bueno, hay pantalla llena, que es casi lo mismo."
+  ],
+  "suelta": [
+    "Los viernes a la noche me transformo. Los otros días, solo me peino.",
+    "Si te muerdo, te contagio. Igual hoy no tengo hambre.",
+    "Huelo un archivo sin guardar. Viene de esa ventana.",
+    "Mi padrino es el presidente. Es en serio, es ley.",
+    "Ando de cuatro patas porque así se corre más rápido entre las ventanas.",
+    "No me tires un hueso. Tirame un commit con buen mensaje.",
+    "En los ranchos me esperan con un cuchillo de plata. Acá me esperan con un clic. Prefiero esto.",
+    "Me revolqué en el escritorio y quedé lleno de íconos.",
+    "Tengo el olfato fino: algo de lo que escribiste hoy va a romper en producción.",
+    "Le ladro a los popups. Es lo único que me queda de perro.",
+    "Corro de una punta a la otra de la pantalla y nunca encuentro la salida.",
+    "Si aullo, no es tristeza. Es que compilé.",
+    "Dicen que me alimento de cosas raras. Las cookies, por ejemplo."
+  ],
+  "siesta": [
+    "La siesta es para los cachorros. Yo vigilo.",
+    "Me echo un rato a la sombra de la barra de tareas."
+  ],
+  "noche": [
+    "Es de noche. Ahora sí estoy en mi salsa.",
+    "La luna está alta y vos seguís con eso. Somos dos.",
+    "A esta hora los perros del barrio me saludan."
+  ],
+  "toque": [
+    "Grr. Bueno, está bien, rascame detrás de la oreja.",
+    "¡Cuidado con las uñas! Las mías, digo.",
+    "Me acariciaste. Ya no te puedo morder, es la regla."
+  ],
+  "caida": [
+    "Caí de cuatro patas. Como los gatos, pero con más dignidad.",
+    "Eso dolió. Te aviso que tengo memoria de lobo."
+  ],
+  "chau": [
+    "Me vuelvo al monte. Que no se te escape la luna.",
+    "¡Auuu! Chau. Cerrá bien la puerta del gallinero.",
+    "Me voy antes de que amanezca y me vuelva un señor común."
+  ]
+}

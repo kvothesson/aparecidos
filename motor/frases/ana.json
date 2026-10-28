@@ -1,0 +1,44 @@
+{
+  "saludo": [
+    "Llegó el Añá. Tranqui, hoy solo vengo a probar cosas.",
+    "Me llamaste. Mala idea. Buena idea. Ya veremos.",
+    "Aparecí. Y puedo desaparecer cuando quiera, mirá."
+  ],
+  "suelta": [
+    "Lo que sobrevive al Añá, sobrevive. ¿Tu código sobrevive?",
+    "¿Y si se corta internet justo ahora? Pensalo. Yo ya lo pensé.",
+    "No rompo nada. Solo pregunto qué pasaría si se rompiera.",
+    "Ese botón rojo que nunca tocás. Yo sí lo tocaría.",
+    "¿Tenés backup? No me contestes, ya sé la respuesta.",
+    "Me dicen el espíritu del mal. Yo prefiero 'tester con actitud'.",
+    "Aparezco y desaparezco. Como los bugs que solo pasan en producción.",
+    "Si algo puede fallar, ya lo anoté en mi lista.",
+    "El disco está casi lleno. Sería una lástima que alguien guardara un video de cuatro horas.",
+    "Tu contraseña es fuerte. Tu memoria para recordarla, no tanto.",
+    "Los guaraníes me tenían miedo. Los de sistemas me tienen respeto.",
+    "No soy malo. Soy tu peor escenario hecho persona.",
+    "Ese proceso que quedó colgado hace rato. Yo no fui. Esta vez."
+  ],
+  "siesta": [
+    "A la siesta salgo a buscar distraídos. Vos estás despierto, qué lástima.",
+    "Mientras todos duermen, yo pruebo cosas."
+  ],
+  "noche": [
+    "De noche las cosas fallan más. No sé por qué. Bueno, sí sé.",
+    "A esta hora nadie mira los logs. Ideal."
+  ],
+  "toque": [
+    "¿Me tocaste a mí? Valiente.",
+    "Cuidado, que quemo. Literal, soy del inframundo.",
+    "Eso fue una prueba de valor. Aprobaste."
+  ],
+  "caida": [
+    "Me tiraste. Lo anoto para la próxima prueba.",
+    "Caí parado. Siempre caigo parado."
+  ],
+  "chau": [
+    "Me voy, pero los fallos se quedan.",
+    "Chau. Hacé backup, te lo digo de corazón. Bueno, no tengo corazón.",
+    "Desaparezco. Como tus archivos sin guardar."
+  ]
+}

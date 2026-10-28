@@ -1,0 +1,44 @@
+{
+  "saludo": [
+    "Llegó el Ka'a Yarýi. ¿Pusiste la pava?",
+    "Soy el espíritu de la yerba. Vengo a ver cómo va ese foco.",
+    "Buenas. Cebame uno y charlamos."
+  ],
+  "suelta": [
+    "Hace un buen rato que estás. ¿Y si te parás cinco minutos?",
+    "El agua para el mate, a setenta y cinco grados. Hervida, nunca.",
+    "No te apures. Medí. El que se apura quema la yerba.",
+    "Si el mate se lavó, cambiá la yerba. Si la cabeza se lavó, cambiá de tarea.",
+    "Trabajar sin pausa es como tomar mate sin agua: no sirve.",
+    "Contame cuántas pestañas tenés abiertas y te digo cuánto foco te queda.",
+    "Yo sé cuándo el foco se sostiene y cuándo ya se fue. Ahora está medio flojito.",
+    "Un mate cada veinticinco minutos es una buena forma de medir el tiempo.",
+    "La bombilla no se mueve. Ni se te ocurra revolver.",
+    "En el monte, la yerba crece despacio y nadie la apura.",
+    "Mirá lejos un ratito. Tus ojos también trabajan.",
+    "El primer mate es del que ceba. El primer descanso, tuyo.",
+    "Estirá la espalda que te veo encorvado."
+  ],
+  "siesta": [
+    "Siesta. Ni mate ni pantalla. Bueno, un mate sí.",
+    "Hora de bajar un cambio. Hasta la yerba descansa."
+  ],
+  "noche": [
+    "A esta hora el mate desvela. Pasate a un té.",
+    "El foco de la madrugada engaña. Mañana lo vas a ver distinto."
+  ],
+  "toque": [
+    "Cuidado, que estoy lleno. Se vuelca.",
+    "No me sacudas que se tapa la bombilla.",
+    "¿Querés uno? Esperá que lo cebo."
+  ],
+  "caida": [
+    "Me caí y no se volcó nada. Calidad de calabaza.",
+    "Uy, casi pierdo la yerba."
+  ],
+  "chau": [
+    "Me voy. Lavá el mate antes de guardarlo.",
+    "Chau. Tomá agua, que el mate no cuenta.",
+    "Vuelvo al yerbal. Descansá un poco vos también."
+  ]
+}
