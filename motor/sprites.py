@@ -308,11 +308,25 @@ _IRUPE = [
     "KllK..KKLLLLLLLLLLKK..KllK",
     "KlLLKKLLLLKLLLLKLLLLKKLLlK",
     ".Kl" + "L" * 20 + "lK.",
-    "..KK" + "l" * 18 + "KK..",
+    "oAKK" + "l" * 18 + "KKAo",
 ]
-_AGUA = "aAAaAAAAaAAAAAaAAAAaAAAAaA"
-_IRUPE_QUIETO = _IRUPE + [_AGUA]
-_IRUPE_PASO = _IRUPE + [_AGUA[2:] + _AGUA[:2]]
+
+
+def _charco(brillos):
+    """Charquito ovalado bajo la hoja, con el reflejo de la flor y brillos que se corren."""
+    filas = [
+        list(".o" + "A" * 22 + "o."),
+        list("...oo" + "A" * 16 + "oo..."),
+        list("......" + "o" * 14 + "......"),
+    ]
+    filas[0][12] = filas[0][13] = "p"  # la flor reflejada
+    for fila, x in brillos:
+        filas[fila][x] = "w"
+    return ["".join(f) for f in filas]
+
+
+_IRUPE_QUIETO = _IRUPE + _charco([(0, 5), (0, 19), (1, 9), (1, 16)])
+_IRUPE_PASO = _IRUPE + _charco([(0, 7), (0, 17), (1, 7), (1, 18)])
 _IRUPE_BOCA = ".Kl" + "L" * 9 + "KK" + "L" * 9 + "lK."
 IRUPE = {
     "nombre": "Irupé",
@@ -323,7 +337,7 @@ IRUPE = {
     "espejar": False,
     "paleta": {
         "K": "#0c1f14", "L": "#3fa34d", "l": "#b0413e", "P": "#f6f0f5",
-        "p": "#f08fb8", "Y": "#ffd34d", "A": "#3a7fbf", "a": "#8fc3ef",
+        "p": "#f08fb8", "Y": "#ffd34d", "A": "#2f6fa8", "o": "#1d4a78", "w": "#9fd3ff",
     },
     "cuadros": {
         "quieto": _IRUPE_QUIETO,

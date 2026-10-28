@@ -92,13 +92,25 @@ def suelo(d, px, rnd):
         px[x, y] = hexa(rnd.choice(("#1f1a12", "#241e14", "#0f0d09")))
 
 
-def laguna(d, px, x0, x1, fase=0):
-    d.rectangle([x0, PISO - 1, x1, PISO + 6], fill=hexa("#1d3f66"))
-    for x in range(x0, x1 + 1):
-        if (x + fase) % 6 in (0, 1):
-            px[x, PISO - 1] = hexa("#5f9fd6")
-        if (x + fase * 2) % 9 == 0:
-            px[x, PISO + 3] = hexa("#3a7fbf")
+def laguna(px, cx, rx, ry, fase=0):
+    """Laguna ovalada con borde oscuro, brillos que se corren y juncos en las orillas."""
+    agua, borde, brillo = hexa("#2f6fa8"), hexa("#1d4a78"), hexa("#9fd3ff")
+    cy = PISO + 4
+    for y in range(cy - ry, cy + ry + 1):
+        for x in range(cx - rx, cx + rx + 1):
+            d = ((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2
+            if d <= 1:
+                px[x, y] = borde if d > 0.72 else agua
+    for i, (bx, by) in enumerate(((-12, 1), (9, 0), (-4, 4), (14, 3), (2, -1))):
+        x = cx + bx + (fase + i * 3) % 4 - 2
+        px[x, cy + by] = brillo
+        px[x + 1, cy + by] = brillo
+    tallo, punta = hexa("#1f3a1c"), hexa("#6b4a2a")
+    for x, alto in ((cx - rx + 1, 13), (cx - rx + 3, 9), (cx - rx + 5, 15),
+                    (cx + rx - 5, 11), (cx + rx - 3, 16), (cx + rx - 1, 10)):
+        for y in range(PISO + 1 - alto, PISO + 2):
+            px[x, y] = tallo
+        px[x, PISO + 1 - alto] = px[x, PISO + 2 - alto] = punta
 
 
 def sello(lienzo, clave, cuadro, x, y, espejo=False):
@@ -152,7 +164,7 @@ def escena(t):
     luna(px, 224, 30, 11)
     monte(d, random.Random(7))
     suelo(d, px, random.Random(9))
-    laguna(d, px, 2, 36, fase=int(t * 12))
+    laguna(px, 19, 19, 6, fase=int(t * 12))
     titulo(px, "APARECIDOS", 9)
 
     paso = int(t * 16) % 2 == 1
@@ -160,7 +172,7 @@ def escena(t):
     q = "paso" if paso else "quieto"
     ola = math.sin(t * 2 * math.pi)
 
-    sello(px, "irupe", "paso" if paso else "quieto", 6, PISO - 9)
+    sello(px, "irupe", "paso" if paso else "quieto", 6, PISO - 8)
     sello(px, "pombero", q, 50, PISO - 24)
     sello(px, "kaayaryi", q, 88, PISO - 18)
     sello(px, "mboi", q, 116, PISO - 9)
