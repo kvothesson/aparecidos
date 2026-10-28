@@ -1,0 +1,66 @@
+{
+  "saludo": [
+    "Llegó el Pombero. No me mires fijo que me pongo tímido.",
+    "Hola. Vine por el silbido. ¿Fuiste vos?",
+    "Andaba por el monte de tus carpetas y escuché ruido.",
+    "Me invocaste con barra y todo. Acá estoy."
+  ],
+  "suelta": [
+    "Si me dejás un poco de miel al lado del teclado, te cuido los archivos.",
+    "Si escuchás un silbido y no hay nadie, soy yo. Si no hay silbido y hay alguien, preocupate.",
+    "Parece que estás escribiendo código. ¿Querés que te esconda un punto y coma?",
+    "Yo no fui. Bueno, un poco sí.",
+    "La Luz Mala no es un bug. Es una feature que nadie pidió.",
+    "El séptimo hijo varón se vuelve lobizón. El séptimo commit sin mensaje, también.",
+    "Guardá. Guardá ahora. Después no digas que el Pombero no te avisó.",
+    "En el monte no hay wifi y nadie se queja.",
+    "Camino sin hacer ruido. Las pisadas las dejo en los logs.",
+    "El Mbói me contó que hoy abriste esa pestaña doce veces.",
+    "Le pregunté a la Red por vos. Dijo 'nodo activo'. Buena señal.",
+    "En la Biblioteca de Babel hay un libro con tu nombre. Mal escrito, pero está.",
+    "Si el ventilador suena fuerte, no es la PC. Soy yo respirando.",
+    "Un mate con agua hirviendo es peor que borrar la rama main.",
+    "Tranqui. Los bichos de verdad no muerden. Los bugs, a veces.",
+    "Me escondí en la papelera un rato. Encontré cosas tuyas de 2019.",
+    "Pasó la Mainumby volando y te dejó un recado: tomá agua.",
+    "No silbes de noche. Contesto.",
+    "¿Ese archivo se llama final_final_ahora_si? Te entiendo.",
+    "Si te trabás, contale el problema a un carpincho. Es como el pato de goma, pero nuestro.",
+    "Te miro desde la esquina de la pantalla. Es mi lugar en el mundo.",
+    "El irupé flota sin hundirse. Vos podés con este deploy.",
+    "Dicen que en la Ruta 404 alguien perdió la memoria. Ojalá no haya sido tu RAM.",
+    "La Radio Austral nunca suena igual dos veces. Yo tampoco.",
+    "Al monte no hay que tenerle miedo. Hay que tenerle respeto y backup.",
+    "A veces me pierdo entre las ventanas. Si me ves detrás de algo, no me saques.",
+    "Me dijeron que te ayude. No me dijeron cómo.",
+    "Si te sentís observado, es normal. Los espíritus del monte vemos bien.",
+    "Un poco de tabaco y me quedo tranquilo toda la tarde. Es broma. O no.",
+    "Los que me tratan bien encuentran lo que perdieron. Fijate en la carpeta Descargas."
+  ],
+  "siesta": [
+    "Es la hora de la siesta. Los chicos que no duermen me ven.",
+    "Siesta. Yo no digo nada, pero te estoy mirando.",
+    "Hora sagrada. Bajá el brillo y cerrá los ojos un rato."
+  ],
+  "noche": [
+    "Son altas horas. Hasta la Luz Mala se fue a dormir.",
+    "A esta hora el monte habla bajito. Vos también deberías.",
+    "Si seguís despierto, te silbo una milonga."
+  ],
+  "toque": [
+    "¡Ey! Así no se toca a un espíritu del monte.",
+    "Cosquillas no. Tengo mucho pelo.",
+    "¿Me llamaste? Me pareció escuchar un clic.",
+    "Sí, soy real. Más o menos."
+  ],
+  "caida": [
+    "Me dejaste caer. Lo voy a recordar.",
+    "Aterrizaje forzoso en la barra de tareas.",
+    "Uy. Menos mal que tengo los pies grandes."
+  ],
+  "chau": [
+    "Me vuelvo al monte. Dejá la miel donde estaba.",
+    "Chau. Si escuchás un silbido, ya sabés.",
+    "Me voy a dormir la siesta. Portate bien."
+  ]
+}

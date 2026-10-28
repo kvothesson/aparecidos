@@ -1,0 +1,12 @@
+{
+  "name": "kvothesson",
+  "description": "Un Pombero que recorre tu pantalla y te dice cosas, como el clip de Word pero del monte. Folklore del Universo Austral.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kvothesson"
+  },
+  "homepage": "https://github.com/kvothesson/kvothesson-bicho",
+  "repository": "https://github.com/kvothesson/kvothesson-bicho",
+  "license": "MIT",
+  "keywords": ["mascota", "pet", "folklore", "pombero", "argentina"]
+}
