@@ -1,5 +1,7 @@
 # aparecidos
 
+![Los ocho aparecidos de noche en el monte: Irupé, Pombero, Ka'a Yarýi, Mbói, Lobizón, Añá, Luz Mala y Mainumby](assets/portada.gif)
+
 Los aparecidos del folklore del Universo Austral se dejan ver en tu pantalla. Caminan,
 flotan, vuelan o reptan por el borde de abajo, y cada tanto te dicen algo. Como el
 clip de Word, pero del monte.
@@ -55,6 +57,7 @@ python motor/aparecidos.py todos
 - **Frases:** están en `motor/frases/<bicho>.json`, agrupadas por momento: `saludo`, `suelta`, `siesta`, `noche`, `toque`, `caida` y `chau`.
 - **Sprites:** están en `motor/sprites.py`. Son pixel art escrito con letras, una paleta por bicho y cinco cuadros: quieto, paso, parpadeo, habla y habla con paso.
 - **Bicho nuevo:** necesita su entrada en `BICHOS`, su archivo de frases y su `skills/<bicho>/SKILL.md`.
+- **Portada:** se arma con `python assets/portada.py`, usando los mismos sprites. Si sumás un bicho, ubicalo en la escena y volvé a generarla.
 
 ## Cómo funciona
 
